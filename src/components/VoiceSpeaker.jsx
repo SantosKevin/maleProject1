@@ -18,6 +18,11 @@ const VoiceSpeaker = () => {
     setSpeakOn(true);
     setVoiceOn(false);
   };
+  const goHome = () => {
+    setStartOn(false);
+    setSpeakOn(false);
+    setVoiceOn(false);
+  };
 
   return (
     <div className="container">
@@ -31,20 +36,32 @@ const VoiceSpeaker = () => {
         </>
       )}
       {voiceOn && (
-        <div className="containerVoice">
-          <Test />
-          <button className="linkButton" onClick={startSpeak}>
-            Cambiar a modo HABLAR{" "}
+        <>
+          <button className="linkButton1" onClick={goHome}>
+            Volver al INICIO
           </button>
-        </div>
+          <br />
+          <div className="containerVoice">
+            <Test />
+            <button className="linkButton" onClick={startSpeak}>
+              Cambiar a modo HABLAR{" "}
+            </button>
+          </div>
+        </>
       )}
       {speakOn && (
-        <div className="containerVoice">
-          <TestVoice />
-          <button className="linkButton" onClick={startVoice}>
-            Cambiar a modo ESCUCHAR{" "}
+        <>
+          <button className="linkButton1" onClick={goHome}>
+            Volver al INICIO
           </button>
-        </div>
+          <br />
+          <div className="containerVoice">
+            <TestVoice />
+            <button className="linkButton" onClick={startVoice}>
+              Cambiar a modo ESCUCHAR{" "}
+            </button>
+          </div>
+        </>
       )}
     </div>
   );
