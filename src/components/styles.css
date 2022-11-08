@@ -1,0 +1,128 @@
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+.container {
+    width: calc(100vw - 40px);
+    height: calc(100vh - 40px);
+    background: linear-gradient(to bottom right, rgb(184, 9, 9), rgb(72, 4, 4));
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+    color: white;
+}
+
+img {
+    cursor: pointer;
+    transition: all .5s ease;
+    animation:brath 8s  linear infinite;
+}
+
+.button {
+    margin-top: 30px;
+    border-radius: 20px;
+    background-color: rgb(44, 43, 43);
+    color: white;
+    font-size: 16px;
+    padding: 20px 40px;
+    border-color: transparent;
+    box-shadow: 10px 8px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: all .5s ease;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
+@keyframes brath{
+    0%{transform: scale(1);}
+    25%{transform: scale(.9);}
+    60%{transform: scale(1);}
+    80%{transform: scale(.9);}
+    100%{transform: scale(1);}
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.buttonSpeak:hover {
+    transform: scale(1.1);
+}
+
+.containerVoice {
+    max-width: 500px;
+    width: 100%;
+    height: 550px;
+    border-radius: 20px;
+    background-color: rgb(35, 35, 35, .26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: -5px 15px 10px rgba(0, 0, 0, 0.25);
+}
+
+.textArea {
+    margin-top: 10px;
+    border-radius: 20px;
+    height: 150px;
+    width: 87%;
+    padding: 20px;
+    font-family: 'Rubik', sans-serif;
+    max-height: 150px;
+    min-height: 100px;
+    min-width: 87%;
+    max-width: 87%;
+    font-size: 25px;
+}
+
+h3 {
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+.buttonSpeak {
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: rgb(44, 43, 43);
+    color: white;
+    font-size: 16px;
+    padding: 15px 30px;
+    border-color: transparent;
+    box-shadow: 10px 8px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: all .5s ease;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container1 {
+    width: 100%;
+    background-color: transparent;
+}
+
+.linkButton {
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+    margin-top: 40px;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.pCustom {
+    min-height: 30px;
+    color: white;
+    margin: 0;
+    margin-top: 10px;
+}
