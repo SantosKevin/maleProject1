@@ -89,7 +89,13 @@ h3 {
     font-family: 'Rubik', sans-serif;
 }
 
-.buttonSpeak {
+.buttonSpeak1 {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.buttonSpeak, .buttonSpeak1 {
     margin-top: 20px;
     border-radius: 20px;
     background-color: rgb(44, 43, 43);

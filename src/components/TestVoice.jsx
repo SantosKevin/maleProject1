@@ -36,7 +36,7 @@ const TestVoice = () => {
         className="textArea"
         placeholder="Aquí se traducirá lo que hables..."
       />
-      <button className="buttonSpeak" onMouseDown={listen} onMouseUp={stop}>
+      <button className="buttonSpeak1" onMouseDown={listen} onTouchStart={listen} onMouseUp={stop} onTouchEnd={stop}>
         Mantén Presionado y Habla
       </button>
       <p className="pCustom"> {listening && "¡Estoy escuchando! ¡Habla!"}</p>
